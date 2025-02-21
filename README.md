@@ -15,6 +15,7 @@ Basit bir log kayıt sistemi uygulaması. Bu program, log kayıtlarını önceli
 - Yeni log kayıtları ekleme
 - Tüm kayıtları listeleme
 - Üç farklı öncelik seviyesi (Normal, Uyari, Hata)
+- Otomatik bellek yönetimi ve bellek sızıntısı önleme
 
 ## Kullanılan Veri Yapısı
 Projede tek yönlü bağlı liste (Singly Linked List) kullanılmıştır. Bu veri yapısının seçilme nedenleri:
@@ -59,6 +60,7 @@ Program çalıştırıldığında aşağıdaki menü seçenekleri sunulur:
 
 3. **Cikis**
    - Programdan çıkış yapar ve belleği temizler
+   - Tüm dinamik bellek otomatik olarak serbest bırakılır
 
 ## Katkıda Bulunma
 1. Bu projeyi fork edin
