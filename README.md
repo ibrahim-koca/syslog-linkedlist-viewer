@@ -1,4 +1,4 @@
-# Syslog Linked List Görüntüleyici
+# Syslog Log Kayıt Sistemi
 
 Basit bir log kayıt sistemi uygulaması. Bu program, log kayıtlarını öncelik seviyelerine göre saklamak ve görüntülemek için bağlı liste veri yapısını kullanır.
 
