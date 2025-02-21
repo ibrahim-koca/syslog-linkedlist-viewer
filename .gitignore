@@ -1,0 +1,25 @@
+# Derlenmiş dosyalar
+*.exe
+*.out
+*.o
+*.obj
+
+# IDE ve editör dosyaları
+.vscode/
+.vs/
+*.suo
+*.user
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+# Debug dosyaları
+debug/
+Debug/
+Release/
+x64/
+x86/
+
+# Geçici dosyalar
+*.tmp
+*~
