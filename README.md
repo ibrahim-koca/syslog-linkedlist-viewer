@@ -24,7 +24,7 @@ Projede tek yönlü bağlı liste (Singly Linked List) kullanılmıştır. Bu ve
 - Bellek kullanımında verimlilik
 
 ## Gereksinimler
-- C derleyicisi (GCC önerilir)
+- C derleyicisi
 - Standart C kütüphaneleri
 
 ## Kurulum
