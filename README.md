@@ -47,22 +47,31 @@ gcc -o syslog_program main.c
 ## Kullanım
 Program çalıştırıldığında aşağıdaki menü seçenekleri sunulur:
 
-1. Kayitlari goster
+1. **Kayitlari goster**
    - Tüm log kayıtlarını öncelik seviyeleriyle birlikte görüntüler
 
-2. Yeni kayit ekle
+2. **Yeni kayit ekle**
    - Yeni bir log kaydı oluşturur
    - Öncelik seviyeleri:
      - 0: Normal
      - 1: Uyari
      - 2: Hata
 
-3. Cikis
+3. **Cikis**
    - Programdan çıkış yapar ve belleği temizler
 
 ## Katkıda Bulunma
 1. Bu projeyi fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeniOzellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik: <özellik adı>'`)
-4. Branch'inizi push edin (`git push origin feature/yeniOzellik`)
+2. Yeni bir branch oluşturun:
+```bash
+git checkout -b feature/yeniOzellik
+```
+3. Değişikliklerinizi commit edin:
+```bash
+git commit -am 'Yeni özellik: <özellik adı>'
+```
+4. Branch'inizi push edin:
+```bash
+git push origin feature/yeniOzellik
+```
 5. Bir Pull Request oluşturun
