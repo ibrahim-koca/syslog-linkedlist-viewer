@@ -30,23 +30,22 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
 1. Bu depoyu klonlayın:
    ```bash
-   git clone https://github.com/kullanici_adiniz/log-sistemi.git
+   git clone https://github.com/ibrahim-koca/syslog-linkedlist-viewer
    ```
 2. Proje dizinine gidin:
    ```bash
-   cd log-sistemi
+   cd syslog-linkedlist-viewer
    ```
 3. Programı derleyin:
    ```bash
-   gcc log_sistemi.c -o log_sistemi
-   ```
+   gcc main.c -o syslog-linkedlist-viewer
 
 ## Kullanım
 
 Programı çalıştırmak için aşağıdaki komutu kullanın:
 
 ```bash
-./log_sistemi
+./syslog-linkedlist-viewer
 ```
 
 Program, örnek log mesajlarını ekleyecek ve bu mesajları ekranda gösterecektir.
