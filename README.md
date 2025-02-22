@@ -1,4 +1,4 @@
-# Log Sistemi Projesi
+# Syslog Log Sistemi Projesi
 
 Bu proje, syslog mesajlarını yönetmek ve görüntülemek için basit bir C programı içerir. Program, farklı öncelik seviyelerine sahip log mesajlarını bir bağlı liste yapısında saklar ve bu mesajları kullanıcıya gösterir.
 
