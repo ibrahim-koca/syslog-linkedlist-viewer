@@ -1,79 +1,74 @@
-# Syslog Log Kayıt Sistemi
+# Log Sistemi Projesi
 
-Basit bir log kayıt sistemi uygulaması. Bu program, log kayıtlarını öncelik seviyelerine göre saklamak ve görüntülemek için bağlı liste veri yapısını kullanır.
+Bu proje, syslog mesajlarını yönetmek ve görüntülemek için basit bir C programı içerir. Program, farklı öncelik seviyelerine sahip log mesajlarını bir bağlı liste yapısında saklar ve bu mesajları kullanıcıya gösterir.
 
 ## İçindekiler
-- [Özellikler](#özellikler)
-- [Kullanılan Veri Yapısı](#kullanılan-veri-yapısı)
-- [Gereksinimler](#gereksinimler)
-- [Kurulum](#kurulum)
-- [Kullanım](#kullanım)
-- [Katkıda Bulunma](#katkıda-bulunma)
 
-## Özellikler
-- Log kayıtlarını öncelik seviyesine göre saklama
-- Yeni log kayıtları ekleme
-- Tüm kayıtları listeleme
-- Üç farklı öncelik seviyesi (Normal, Uyari, Hata)
-- Otomatik bellek yönetimi ve bellek sızıntısı önleme
+1. [Proje Açıklaması](#proje-açıklaması)
+2. [Gereksinimler](#gereksinimler)
+3. [Kurulum](#kurulum)
+4. [Kullanım](#kullanım)
+5. [Fonksiyonlar](#fonksiyonlar)
+6. [Örnekler](#örnekler)
+7. [Katkıda Bulunma](#katkıda-bulunma)
 
-## Kullanılan Veri Yapısı
-Projede tek yönlü bağlı liste (Singly Linked List) kullanılmıştır. Bu veri yapısının seçilme nedenleri:
-- Dinamik bellek kullanımı
-- Yeni kayıtların hızlı eklenmesi
-- Basit ve etkili implementasyon
-- Bellek kullanımında verimlilik
+## Proje Açıklaması
 
-## Gereksinimler
+Bu proje, syslog mesajlarını yönetmek için bir C programı içerir. Program, farklı öncelik seviyelerine sahip log mesajlarını bir bağlı liste yapısında saklar ve bu mesajları kullanıcıya gösterir. Program, aşağıdaki özellikleri içerir:
+
+- Log mesajlarını farklı öncelik seviyelerinde saklama
+- Log mesajlarını ekranda görüntüleme
+- Bellek yönetimi ve temizleme
+
+## Gereksinimler 
 - C derleyicisi (GCC veya Dev-C++ gibi GCC tabanlı derleyiciler)
 - Standart C kütüphaneleri
 
 ## Kurulum
-1. Projeyi klonlayın:
-```bash
-git clone https://github.com/ibrahim-koca/syslog-linkedlist-viewer.git
-cd syslog-linkedlist-viewer
-```
 
-2. Programı derleyin:
-```bash
-gcc -o syslog_program main.c
-```
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 
-3. Programı çalıştırın:
-```bash
-./syslog_program
-```
+1. Bu depoyu klonlayın:
+   ```bash
+   git clone https://github.com/kullanici_adiniz/log-sistemi.git
+   ```
+2. Proje dizinine gidin:
+   ```bash
+   cd log-sistemi
+   ```
+3. Programı derleyin:
+   ```bash
+   gcc log_sistemi.c -o log_sistemi
+   ```
 
 ## Kullanım
-Program çalıştırıldığında aşağıdaki menü seçenekleri sunulur:
 
-1. **Kayitlari goster**
-   - Tüm log kayıtlarını öncelik seviyeleriyle birlikte görüntüler
+Programı çalıştırmak için aşağıdaki komutu kullanın:
 
-2. **Yeni kayit ekle**
-   - Yeni bir log kaydı oluşturur
-   - Öncelik seviyeleri:
-     - 0: Normal
-     - 1: Uyari
-     - 2: Hata
+```bash
+./log_sistemi
+```
 
-3. **Cikis**
-   - Programdan çıkış yapar ve belleği temizler
-   - Tüm dinamik bellek otomatik olarak serbest bırakılır
+Program, örnek log mesajlarını ekleyecek ve bu mesajları ekranda gösterecektir.
+
+## Fonksiyonlar
+
+- `dugumOlustur`: Yeni bir log düğümü oluşturur.
+- `mesajEkle`: Log mesajını listeye ekler.
+- `oncelikMetni`: Öncelik seviyesini metin olarak döndürür.
+- `mesajlariGoster`: Tüm log mesajlarını ekranda gösterir.
+- `listeyiTemizle`: Log listesini temizler ve belleği serbest bırakır.
+
+## Örnekler
+
+Program, aşağıdaki örnek log mesajlarını içerir:
+
+- Acil durum mesajı: "System crash detected! Immediate action required."
+- Hata mesajı: "Failed to establish database connection."
+- Uyarı mesajı: "Disk space usage exceeds 90%."
+- Bilgi mesajı: "System startup completed successfully."
+- Hata ayıklama mesajı: "Function call trace: initSystem()"
 
 ## Katkıda Bulunma
-1. Bu projeyi fork edin
-2. Yeni bir branch oluşturun:
-```bash
-git checkout -b feature/yeniOzellik
-```
-3. Değişikliklerinizi commit edin:
-```bash
-git commit -am 'Yeni özellik: <özellik adı>'
-```
-4. Branch'inizi push edin:
-```bash
-git push origin feature/yeniOzellik
-```
-5. Bir Pull Request oluşturun
+
+Katkıda bulunmak için lütfen bir "Pull Request" açın. Büyük değişiklikler için önce bir konu açarak neyi değiştirmek istediğinizi tartışın.
